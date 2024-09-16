@@ -68,3 +68,96 @@ git push origin master
 
 > Inicialización proyecto Vue Js
 
+# CLASE 02 MIÉRCOLES 21 DE AGOSTO DEL 2024 - Portafolio 2
+
+> Vamos a cargar la llave SSH publica en GitHub
+
+<sub>Para copiar la llave publica debes ir al archivo .ssh y allí encontrarás el archivo .pub lo podes abrir con el txt, luego copiar el contenido que esta dentro.</sub>
+
+<sub>copiar la llave publica #Ir a GitHub, vamos a setting, vamos a SSH and GPG keys</sub>
+
+<sub>crear una nueva #New SSH key poner nombre y pegar la ssh publica, con esto esta listo.</sub>
+
+> Aconsejo que la ssh tenga el nombre del ordenador en el que estas trabajando. Esto se debe hacer con cada pc nueva o dispositivo nuevo que tengamos para acceder a nuestra cuenta de GitHub.
+
+```sh
+git branch #Vemos en que rama estamos
+
+git checkout master #Ponernos en la rama master
+
+git branch -M main #Cambiamos el nombre a la rama master
+
+git remote add origin git@github.com:nombreUsuario/class-git.git #Agregamos el repositorio remoto, este es un ejemplo
+
+git remote -v #Vemos si ya esta conectado
+
+git merge segunda #Mergeamos lo que tenemos en la rama segunda en main
+
+git commit -am "Uso de GitHub parte 20" #Hacemos el commit de hoy
+
+git push origin main #Pasamos todo lo hecho a GitHub, revisar en el repositorio en GitHub.
+```
+
+> Frente al cambio de nombre de rama master a main, suele suceder que en el repo de GitHub se hayan creado dos ramas, la rama master y la rama main, se debe ir al repo, settings y ahí se puede cambiar la rama principal, en vez de que siga siendo master, que sea la rama main, luego de eso ya podemos borrar la rama master.
+
+## PORTAFOLIO
+
+> Instalacion de Extensiones y Creación del Proyecto en Vue JS.
+
+# CLASE 03 MIÉRCOLES 28 DE AGOSTO DEL 2024 - Portafolio 3
+
+> Cambios en GitHub: de master a main
+
+<sub>El escritor Argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.</sub>
+
+<sub>Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.</sub>
+
+<sub>Sí, esta lectura es parte de la enseñanza profesional de Git & GitHub.</sub>
+
+**_Desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” -como aprenderás aquí- sino main._**
+
+<sub>Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.</sub>
+
+<sub>La industria de la tecnología lleva muchos años usando términos como master, slave, blacklist o whitelist y esperamos pronto puedan ir desapareciendo.</sub>
+
+<sub>Y sí, las palabras importan.</sub>
+
+**_Por lo que de aquí en adelante cada vez que me escuches mencionar “master” debes saber que hago referencia a “main”._**
+
+### ¿Cuando es que sigue siendo master y cuando sigue siendo main?
+
+**_Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando git branch -M main._**
+_Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio._
+
+### PORTAFOLIO
+
+> Inicialización de portafolio vue
+
+# CLASE 03 MIÉRCOLES 28 DE AGOSTO DEL 2024 - Portafolio 3
+
+> Cambios en GitHub: de master a main
+
+<sub>El escritor Argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.</sub>
+
+<sub>Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.</sub>
+
+<sub>Sí, esta lectura es parte de la enseñanza profesional de Git & GitHub.</sub>
+
+**_Desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” -como aprenderás aquí- sino main._**
+
+<sub>Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.</sub>
+
+<sub>La industria de la tecnología lleva muchos años usando términos como master, slave, blacklist o whitelist y esperamos pronto puedan ir desapareciendo.</sub>
+
+<sub>Y sí, las palabras importan.</sub>
+
+**_Por lo que de aquí en adelante cada vez que me escuches mencionar “master” debes saber que hago referencia a “main”._**
+
+### ¿Cuando es que sigue siendo master y cuando sigue siendo main?
+
+**_Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando git branch -M main._**
+_Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio._
+
+## PORTAFOLIO
+
+> Inicialización de proyecto en Vue JS

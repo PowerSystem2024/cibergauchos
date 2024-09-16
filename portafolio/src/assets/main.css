@@ -1,4 +1,4 @@
-@import "./base.css";
+@import './base.css';
 
 #app {
   max-width: 1280px;
@@ -7,13 +7,12 @@
   font-weight: normal;
 }
 
-a {
+a{
   text-decoration: none;
   color: var(--vt-c-white);
 }
 
-/*Diseño responsivo*/
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   #app {
     display: flex;
     flex-direction: column;
@@ -28,3 +27,5 @@ a {
     width: 80%;
   }
 }
+
+ 
