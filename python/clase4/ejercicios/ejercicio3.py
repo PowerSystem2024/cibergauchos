@@ -1,40 +1,34 @@
-#Ejercicio 3: Menú interactivo - Cajero automatico
-# Hacer un programa que simule un cajero automatico con un saldo
-# inicial de $1000 y tendrá el siguiente menú de opciones: 
-#         1. Ingresar dinero en la cuenta
-#         2. Retirar dinero de la cuenta
-#         3. Mostrar dinero disponible
-#         4. Salir
+#Ejercicio 3: Agregar personajes a una lista
+#Escriba un programa donde cree una lista con los siguientes personajes del señor de los anillos
+#Nombre: Aragon
+#Clase: Guerrero
+#Raza: Dúnadan del norte
 
+#Nombre: Gandalf
+#Clase: Mago
+#Raza: Istar
 
-sueldo = 1000
+#Nombre: Legolas
+#Clase: Arquero
+#Raza: Elfo Sindar
 
-print("--------BIENVENIDOS AL CAJERO AUTOMATICO--------")
+lista_personajes = []  #creamos arreglo nuevo
+#creamos los conjuntos con los personajes
+p1 = {"Nombre": "Aragon", "Clase": "Guerrero", "Raza": "Dunadan del norte"}
+#agregamos el primer personaje a la lista
+lista_personajes.append(p1)
+#lo mismo con el segundo personaje
+p2 = {"Nombre": "Gandalf", "Clase": "Mago", "Raza": "Istar"}
+lista_personajes.append(p2)
+#tercer personaje
+p3 = {"Nombre": "Legolas", "Clase": "Arquero", "Raza": "Elfo Sindar"}
+lista_personajes.append(p3)
 
+#creacion de dos personajes mas y añadiendolos a la lista
+p4 = {"Nombre": "Gimli", "Clase": "Guerrero", "Raza": "Enano"}
+lista_personajes.append(p4)
 
-print("\n1. Ingresar dinero en la cuenta")
-print("2. Retirar dinero de la cuenta")
-print("3. Mostrar dinero disponible")
-print("4. Salir")
+p5 = {"Nombre": "Frodo", "Clase": "Hobbit", "Raza": "Hobbit"}
+lista_personajes.append(p5)
 
-
-opcion = int(input("Elija una opción: "))
-
-if opcion == 1:
-    print("Usted seleccionó la opción 1")
-    aumento = int(input("¿Cuanto dinero desea ingresar?:  "))
-    print(f"Dinero ingresado correctamente, ahora tiene: ${sueldo + aumento}")
-elif opcion == 2:
-    print("Usted seleccionó la opción 2")
-    print(f"Actualmente tiene: {sueldo}")
-    retiro = int(input("¿Cuanto dinero desea retirar?:  "))
-    while retiro > 1000:
-        print("¡Dinero insuficiente!")
-        retiro = int(input("¿Cuanto dinero desea retirar?:  "))
-    print(f"Dinero retirado correctamente, ahora tiene {sueldo - retiro}")
-elif opcion == 3:
-    print(f"DINERO DISPONIBLE: ${sueldo}")
-elif opcion == 4:
-    print("Ha decidido salir")
-
-print("\nGRACIAS POR HABER UTILIZADO EL CAJERO AUTOMÁTICO")
+print(lista_personajes)
