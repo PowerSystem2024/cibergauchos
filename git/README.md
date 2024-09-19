@@ -104,34 +104,6 @@ git push origin main #Pasamos todo lo hecho a GitHub, revisar en el repositorio 
 
 > Instalacion de Extensiones y Creación del Proyecto en Vue JS.
 
-# CLASE 03 MIÉRCOLES 28 DE AGOSTO DEL 2024 - Portafolio 3
-
-> Cambios en GitHub: de master a main
-
-<sub>El escritor Argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.</sub>
-
-<sub>Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.</sub>
-
-<sub>Sí, esta lectura es parte de la enseñanza profesional de Git & GitHub.</sub>
-
-**_Desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” -como aprenderás aquí- sino main._**
-
-<sub>Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.</sub>
-
-<sub>La industria de la tecnología lleva muchos años usando términos como master, slave, blacklist o whitelist y esperamos pronto puedan ir desapareciendo.</sub>
-
-<sub>Y sí, las palabras importan.</sub>
-
-**_Por lo que de aquí en adelante cada vez que me escuches mencionar “master” debes saber que hago referencia a “main”._**
-
-### ¿Cuando es que sigue siendo master y cuando sigue siendo main?
-
-**_Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando git branch -M main._**
-_Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio._
-
-### PORTAFOLIO
-
-> Inicialización de portafolio vue
 
 # CLASE 03 MIÉRCOLES 28 DE AGOSTO DEL 2024 - Portafolio 3
 
@@ -161,3 +133,58 @@ _Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás
 ## PORTAFOLIO
 
 > Inicialización de proyecto en Vue JS
+
+
+
+
+# CLASE 04 MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024 - Portafolio 4
+
+
+
+> Tu primer push
+
+<sub>La creación de las SSH es necesario solo una vez por cada computadora. Aquí conocerás cómo conectar a GitHub usando SSH.</sub>
+
+
+<sub>Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.</sub>
+
+<sub>Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.</sub>
+
+> Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+```ssh
+
+git remote set-url origin url-ssh-del-repositorio-en-github
+
+Comandos para copiar la llave SSH:
+
+ESTAS SON LAS RUTAS DEL SSH PUBLICO
+-Mac:
+pbcopy < ~/.ssh/id_rsa.pub
+
+Windows (Git Bash):
+
+clip < ~/.ssh/id_rsa.pub
+
+Linux (Ubuntu):
+
+cat ~/.ssh/id_rsa.pub
+
+```
+
+> Importante
+
+
+<sub>Las buenas costumbres nos enseñan que antes de hacer un push, siempre debemos hacer un pull, un fetch, esto para que si alguien ya hizo algún cambio, no se genere un conflicto.</sub>
+
+> Invitar a un colaborador
+
+<sub>Para invitar a un colaborador debemos ir a GitHub y seleccionar:</sub>
+<sub>setting -> colaborators -> ingresar contraseña o un F2A de verificación y enviar la invitación escribiendo el nombre de usuario.</sub>
+
+
+<sub>Del otro lado el usuario invitado solo debe aceptar y listo, ya puede participar del proyecto haciendo commit.</sub>
+
+## PORTAFOLIO
+
+> Inicialización proyecto Vue Js
