@@ -68,6 +68,8 @@ git push origin master
 
 > Inicialización proyecto Vue Js
 
+
+
 # CLASE 02 MIÉRCOLES 21 DE AGOSTO DEL 2024 - Portafolio 2
 
 > Vamos a cargar la llave SSH publica en GitHub
@@ -96,9 +98,9 @@ git merge segunda #Mergeamos lo que tenemos en la rama segunda en main
 git commit -am "Uso de GitHub parte 20" #Hacemos el commit de hoy
 
 git push origin main #Pasamos todo lo hecho a GitHub, revisar en el repositorio en GitHub.
-```
+``` 
 
-> Frente al cambio de nombre de rama master a main, suele suceder que en el repo de GitHub se hayan creado dos ramas, la rama master y la rama main, se debe ir al repo, settings y ahí se puede cambiar la rama principal, en vez de que siga siendo master, que sea la rama main, luego de eso ya podemos borrar la rama master.
+>Frente al cambio de nombre de rama master a main, suele suceder que en el repo de GitHub se hayan creado dos ramas, la rama master y la rama main, se debe ir al repo, settings y ahí se puede cambiar la rama principal, en vez de que siga siendo master, que sea la rama main, luego de eso ya podemos borrar la rama master.
 
 ## PORTAFOLIO
 
@@ -188,3 +190,75 @@ cat ~/.ssh/id_rsa.pub
 ## PORTAFOLIO
 
 > Inicialización proyecto Vue Js
+
+# CLASE 05 MIÉRCOLES 11 DE SEPTIEMBRE DEL 2024 - Portafolio 5
+
+> *Git tag y versiones en GitHub*
+
+<sub>En Git, las etiquetas o Git tags tienen un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando git tag, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas, es esencial para un flujo de trabajo eficiente.</sub>
+
+
+> Creación de etiquetas en Git
+
+```sh
+git tag
+
+```
+
+
+> Sustituye con un identificador semántico que refleje el estado del repositorio en el momento de la creación. Git admite etiquetas anotadas y ligeras.
+
+
+> Listado de etiquetas
+> Para obtener una lista de etiquetas en el repositorio, ejecuta el siguiente comando:
+<div align="center">
+<img src="https://static.platzi.com/media/user_upload/tagging%20%281%29-12fce53a-7a10-4eab-9b45-c37111d925f8.jpg" align="center" style="width: 350" />
+</br>
+</div> 
+
+> Para crear una etiqueta, ejecuta el siguiente comando:
+
+
+
+<sub>Las etiquetas anotadas almacenan información adicional como la fecha, etiquetador y correo electrónico, y son ideales para publicaciones públicas. Las etiquetas ligeras son más simples y se emplean como “marcadores” de una confirmación específica.</sub>
+
+```ssh
+git tag
+
+Esto mostrará una lista de las etiquetas existentes, como:
+
+v1.0
+
+v1.1
+
+v1.2
+
+Para perfeccionar la lista, puedes utilizar opciones adicionales, como -l con una expresión comodín.
+
+
+Uso compartido de etiquetas
+
+Compartir etiquetas requiere un enfoque explícito al usar el comando git push. Por defecto, las etiquetas no se envían automáticamente. Para enviar etiquetas específicas, utiliza:
+
+git push origin
+
+Para enviar varias etiquetas a la vez, usa:
+
+git push origin --tags
+
+
+Eliminación de etiquetas
+Para eliminar una etiqueta, usa el siguiente comando:
+
+git tag -d
+
+Esto eliminará la etiqueta identificada por en el repositorio local.
+
+```
+
+En resumen, las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará tu flujo de trabajo con Git.
+
+
+
+## PORTAFOLIO
+#Creando el componente datos personales 
