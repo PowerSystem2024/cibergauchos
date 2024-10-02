@@ -84,3 +84,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/*CAP 5: estas son las reglas globales de la etiqueta section del main en App.vue */
+section{
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin: 3rem 0rem 2rem 0rem;
+}
+section h2{
+  font-size: 2rem;
+  color:aliceblue;
+  margin-bottom: 1,5rem;
+  text-align: center;
+}
+section h3{
+  color:rgb(209, 183, 148);
+}
+
