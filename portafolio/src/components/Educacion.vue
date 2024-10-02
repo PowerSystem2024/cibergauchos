@@ -14,7 +14,7 @@ const arreglo= ref([
 <h1>Linea de Tiempo</h1>
 <ul>
     <li v-for="item in arreglo" :key="item.id">
-    <div class="fecha">{{ item.fecha }}</div>
+    <div class="fecha"> {{ item.fecha }}</div>
     <div class="titulo">{{ item.titulo }}</div>
     <div class="descripcion">{{ item.descripcion }}</div>
     <a class="enlace">{{ item.enlace }}</a>
@@ -31,7 +31,7 @@ ul{
 li{
     list-style: decimal;
     padding-left: 1rem;
-    color: rgb(246, 243, 248);
+    color: rgb(7, 7, 7);
 }
 .fecha{
     background-color: rgb(3, 2, 5);
@@ -41,10 +41,11 @@ li{
 .titulo{
     display: flex;
     justify-content: center;
-    color:aliceblue
+    color:rgb(8, 8, 8)
 }
 .descripcion{
     padding: 1 rem;
+    color:black
 }
 .enlace{
     display: flex;
