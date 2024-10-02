@@ -263,6 +263,7 @@ En resumen, las etiquetas en Git son esenciales para asignar versiones y captura
 ## PORTAFOLIO
 #Creando el componente datos personales 
 
+
 # CLASE 06 MIÉRCOLES 18 DE SEPTIEMBRE DEL 2024 - Portafolio 6
 
 ## Error con los tags
@@ -277,3 +278,4 @@ git tag -d "nombre_del_tag_a_eliminar"
 
 ## Portafolio
 Creando una línea de tiempo para la section Educación - Cursos
+

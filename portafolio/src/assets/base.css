@@ -85,7 +85,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /*CAP 5: estas son las reglas globales de la etiqueta section del main en App.vue */
 section{
   padding: 2rem;
