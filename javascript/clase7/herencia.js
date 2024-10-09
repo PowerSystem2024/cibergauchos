@@ -71,7 +71,7 @@ class Empleado extends Person {
 
   //sobreescritura
 
-  nombreComleto() {
+  nombreCompleto() {
     return super.nombreCompleto() + " " + this._departamento;
   }
 }
