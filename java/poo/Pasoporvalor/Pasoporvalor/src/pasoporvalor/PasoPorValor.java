@@ -5,7 +5,7 @@ public class PasoPorValor {
     public static void main(String[] args) {
         var valorX = 15;
         System.out.println("valorX = " + valorX);
-        cambioValor(valorX);//Una copia enviada
+        cambioValor(valorX);//Haciendo esto enviamos una copia por valor.
         System.out.println("valorX = " + valorX);
     }
     
