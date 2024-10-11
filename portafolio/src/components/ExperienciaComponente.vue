@@ -44,6 +44,7 @@ const experiencias = ref([
 .listado{
     display: flex;
     flex-direction: column;
+    color: beige;
 }
 .item{
     align-items: center;

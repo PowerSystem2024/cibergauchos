@@ -1,7 +1,7 @@
 <script setup>
 import DatosPersonales from './components/DatosPersonales.vue'
 import NavBar from './components/NavBar.vue'
-import Educacion from './components/Educacion.vue';
+import Educacion from './components/EducacionComponente.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 </script>
 
