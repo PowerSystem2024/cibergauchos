@@ -14,7 +14,7 @@ const navegacion = ref([
     <div class="navbar-menu">
       <ul class="nav-list">
         <li v-for="nav in navegacion" :key="nav.id" class="nav-item">
-          <a href="nav.enlace">{{ nav.nombre }}</a>
+          <a :href="nav.enlace">{{ nav.nombre }}</a> <!--Se coloco el operador v-bind al atributo href utilizando su minima exprecion el operador : / y se soluciono el enlace a las distintas secciones-->
         </li>
       </ul>
     </div>
