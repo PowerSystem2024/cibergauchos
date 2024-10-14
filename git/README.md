@@ -279,3 +279,65 @@ git tag -d "nombre_del_tag_a_eliminar"
 ## Portafolio
 Creando una línea de tiempo para la section Educación - Cursos
 
+
+# CLASE 07 MIÉRCOLES 25 DE SEPTIEMBRE DEL 2024 - Portafolio 7
+
+## Error con los tags
+<sub>Investigación: Si un tag es imposible generarlo dos veces ¿Cómo es que existe el error de dos tags con el mismo nombre?¿Cómo se origina este problema o error?</sub>
+
+<sub>Las situaciones que pueden dar lugar a errores que parecen indicar que hay dos tags con el mismo nombre pueden ser:</sub>
+*** 1.Tags locales y remotos: Puedes tener un tag con un nombre en tu repositorio local y, si alguien más crea un tag con el mismo nombre en el repositorio remoto, al intentar hacer un “git fetch” o “git pull”, podrías encontrarte con un conflicto o error, especialmente si no estás al tanto de la creación de ese tag en el remoto.***
+
+*** 2. Reescritura de la historia: Si has reescrito la historia de tu repositorio (por ejemplo, utilizando “git rebase” o “git commit –amend”), puedes terminar en situaciones en las que, al crear un nuevo tag, parezca que hay dos tags con el mismo nombre, aunque realmente estén apuntando a diferentes commits.***
+
+*** 3. Eliminación y recreación: Si se elimina un tag y luego se vuelve a crear con el mismo nombre, y si no se realiza un “git push –tags” después de la eliminación, puede haber confusiones, especialmente en repositorios colaborativos.***
+
+*** 4. Error de sincronización: En entornos donde varios desarrolladores están trabajando, puede haber problemas de sincronización que causen la aparición de tags duplicados.***
+
+<sub>-Para resolver el conflicto relacionado con la creación de tags duplicados hay que seguir estos pasos y comandos:</sub>
+
+**1. Verificar los tags existentes**
+Primero, verifica los tags que ya existen en tu repositorio para confirmar si efectivamente hay duplicados.
+```sh
+git tag –l
+```
+**2. Eliminar el tag duplicado**
+Si encuentras un tag que deseas eliminar, puedes hacerlo utilizando el siguiente comando. Asegúrate de saber qué tag deseas mantener.
+```sh
+git tag -d nombre_del_tag
+``` 
+Si el tag ya ha sido enviado a un repositorio remoto, también deberías eliminarlo del remoto:
+```sh
+git push origin --delete nombre_del_tag
+```
+**3. Crear un nuevo tag (si es necesario)**
+Si necesitas crear un nuevo tag después de eliminar el duplicado, puedes hacerlo con:
+```sh
+git tag -a nombre_del_tag -m "Mensaje del tag"
+``` 
+Esto crea un tag anotado. Si solo deseas un tag ligero, puedes omitir la opción `-a` y el mensaje:
+```sh
+git tag nombre_del_tag
+``` 
+**4. Enviar el tag al remoto**
+Después de crear el tag, asegúrate de enviarlo al repositorio remoto:
+```sh
+git push origin nombre_del_tag
+```  
+**5. Verificar la eliminación y creación**
+Verifica nuevamente los tags en tu repositorio local y remoto para asegurarte de que todo esté correcto.
+Para listar los tags locales:
+```sh
+git tag -l
+```
+Para listar los tags remotos:
+```sh
+git ls-remote --tags origin
+```
+
+## Portafolio
+Creando la seccion experiencia
+
+
+
+
