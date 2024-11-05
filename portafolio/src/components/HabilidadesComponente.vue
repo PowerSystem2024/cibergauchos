@@ -42,7 +42,7 @@ const languajes = ref([
 <style scoped>
 .card-container{
     width: 100%;
-    background: linear-gradient(90deg, #040136 0%, #090979 35%, #1616e8 100%);
+    background-color:  var(--vt-c-indigo);;
     height: auto;
     margin-top: 0.7rem;
     display: flex;
@@ -51,7 +51,8 @@ const languajes = ref([
     gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem;
-    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 1.2rem;
 }
 
 .card{
@@ -61,8 +62,9 @@ const languajes = ref([
     flex-direction: column;
     align-items: center;
     padding: 0.3rem 1rem;
-    border: 1px solid #3737f1;
-    background-color: rgba(240, 255, 255, 0.064);
+    border-radius: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: all 300ms ease-in-out;
 }
 
