@@ -5,27 +5,65 @@ import Educacion from './components/EducacionComponente.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 import ProyectosComponente from './components/ProyectosComponente.vue';
 import HabilidadesComponente from './components/HabilidadesComponente.vue';
+import interesesComponente from './components/interesesComponente.vue';
 </script>
 
 <template>
-  <header>
+  <header id="top">
     <!-- Navbar -->
     <NavBar />
     <!-- Componente Datos Personales -->
     <DatosPersonales />
   </header>
   <main>
-    <!--Componente Educacion-->
-    <section id="educacion">Educacion - Cursos</section>
-    <Educacion />
-    <section id="experiencia">Experiencia</section>
-    <ExperienciaComponente />
-    <section id="proyectos">Proyectos</section>
-    <ProyectosComponente />
-    <section id="habilidades">Habilidades</section>
-    <HabilidadesComponente />
-    <section id="intereses">Intereses</section>
+    <!--el estilo css de section se encuenttra en base.css-->
+    
+    <section id="educacion">
+      <h2>Educacion - Cursos</h2>
+      <!--Componente Educación-->
+      <Educacion />
+    </section>
+  
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+        <!--Componente Experiencia-->
+      <ExperienciaComponente />
+    </section>
+    
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <!--Componente Proyectos-->
+      <ProyectosComponente />
+    </section>
+    
+    <section id="habilidades">
+      <!--Componente Habilidades-->
+      <h2>Habilidades</h2>
+      <HabilidadesComponente />
+    </section>
+    
+    <section id="intereses">
+      <!--Componente Habilidades-->
+      <h2>Intereses</h2>
+      <interesesComponente />
+    </section>
   </main>
+  <footer>
+      <a href="#top">Inicio</a>
+      <p>@ 2024 Equipo de desarrollo CiberGauchos</p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+.app{
+  background-color: black;
+}
+</style>
+
