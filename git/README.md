@@ -463,4 +463,4 @@ Capitulo 8: Creacion de Componente Habilidades.
 
 ## PORTAFOLIO
 
-<sub>Capitulo 9: Creacion de componente Intereses y creación del footer.</sub>
+<sub>Capitulo 9: Creacion de componente Intereses y Footer.</sub>
