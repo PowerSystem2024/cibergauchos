@@ -6,3 +6,5 @@
 
 /java/poo/ContextoEstatico/nbproject/private/
 /java/poo/ContextoEstatico/build/
+pycache/
+*.pyc
