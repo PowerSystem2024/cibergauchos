@@ -72,19 +72,6 @@ misProyectos.value = ([
 
 <style scoped>
 /*Estilo de fondo de la galeria con un fondo estatico */
-/* .galeria {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    background-image: url('/src/assets/fondo-proyectos.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 /* Estilos Fondo Animado de Css de la galería */
 /* La clase 'galeria' es el contenedor principal de la galería de proyectos */
 .galeria {
@@ -99,7 +86,7 @@ misProyectos.value = ([
     /* Establece un espacio de 20px entre los elementos de la galería */
     gap: 20px;
     /* Agrega un padding de 20px alrededor de la galería */
-    padding: 20px;
+    padding: 2rem;
     /* Centra los elementos hijos horizontalmente */
     justify-content: center;
     /* Aplica un fondo con un degradado de colores */
@@ -108,6 +95,8 @@ misProyectos.value = ([
     background-size: 400% 400%;
     /* Aplica una animación al fondo que dura 15 segundos, tiene una transición suave y se repite infinitamente */
     animation: gradient 15s ease infinite;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Define una animación llamada 'gradient' para cambiar la posición del fondo */
@@ -135,8 +124,6 @@ misProyectos.value = ([
     display: flex;
     /* Establece la dirección de los elementos en columna */
     flex-direction: column;
-    /* Aplica un borde de 2px sólido y color gris claro (#ddd) alrededor del proyecto */
-    border: 2px solid #ddd;
     /* Redondea las esquinas del contenedor */
     border-radius: 8px;
     /* Oculta cualquier contenido que se desborde del contenedor */
@@ -147,6 +134,7 @@ misProyectos.value = ([
     max-width: 222px;
     /* Hace que el contenedor se ajuste flexiblemente ocupando al menos 300px de ancho */
     flex: 1 1 300px;
+    padding: 1rem;
 }
 
 /* Estilo para las imágenes dentro del contenedor 'proyecto' */
@@ -197,13 +185,13 @@ misProyectos.value = ([
     gap: 10px;
     /* Agrega un margen superior de 10px */
     margin-top: 30px;
-
+    justify-content: end;
 }
 
 /* Estilo para el botón 'Ver Más' dentro de la clase 'proyecto-links' */
 .proyecto-links .btn-ver-mas {
     /* Aplica un color de fondo azul (#007BFF) */
-    background-color: #007BFF;
+    background-color:  var(--vt-c-indigo);
     /* Aplica un color de texto blanco */
     color: #fff;
     /* Agrega un padding de 10px en vertical y 15px en horizontal */

@@ -40,9 +40,8 @@ const redesSociales = [
       <p>{{ presentacion }}</p>
       <ul class="contacto-lista">
         <li v-for="redSocial in redesSociales" :key="redSocial.id">
-          <a :href="redSocial.url"
-            ><img class="icon-redSocial" :src="redSocial.src" width="35rem" :alt="redSocial.name"
-          /></a>
+          <a :href="redSocial.url"><img class="icon-redSocial" :src="redSocial.src" width="35rem"
+              :alt="redSocial.name" /></a>
         </li>
       </ul>
       <h3>Nuestro teléfono de contacto: {{ telefono }}</h3>
@@ -54,6 +53,7 @@ const redesSociales = [
 .datos-personales {
   margin: 1.5rem 0;
 }
+
 .card {
   padding: 1rem;
   border-radius: 1.2rem;
@@ -65,34 +65,41 @@ const redesSociales = [
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 0.8rem;
   font-weight: 700;
 }
+
 h2 {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+
 p {
   font-size: 1.1rem;
   width: 70%;
   text-align: center;
 }
+
 h3,
 h4 {
   font-weight: 600;
 }
+
 .contacto-lista {
   margin-top: 2rem;
   display: flex;
   list-style: none;
   gap: 1rem;
 }
+
 .icon-redSocial {
   filter: invert(75%);
   transition: 0.2s;
 }
+
 .icon-redSocial:hover {
   filter: invert(100%);
   transition: 0.2s;

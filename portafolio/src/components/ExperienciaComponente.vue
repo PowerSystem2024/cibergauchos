@@ -29,22 +29,25 @@ const experiencias = ref([
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: rgb(85, 63, 126);
+    background-color: var(--vt-c-indigo);
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .titulo{
     font-size: 1.5rem;
-    color: rgb(247, 58, 10);
+    color: white;
+    font-weight: bold;
 }
 .fecha{
     font-size: 1rem;
-    color: rgb(20, 20, 20);
+    font-weight: bold;
+    color: #ceb793;
     margin-bottom: 1rem;
 }
 .listado{
     display: flex;
     flex-direction: column;
-    color: beige;
+    color: white;
 }
 .item{
     align-items: center;
