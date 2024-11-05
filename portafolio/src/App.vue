@@ -50,7 +50,7 @@ import interesesComponente from './components/interesesComponente.vue';
   </main>
   <footer>
       <a href="#top">Inicio</a>
-      <p>@ 2024 Juan Perez - Portafolio web</p>
+      <p>@ 2024 Equipo de desarrollo CiberGauchos</p>
   </footer>
 </template>
 
@@ -61,6 +61,9 @@ footer{
   align-items: center;
   padding: 2rem;
   font-size: 1.3rem;
+}
+.app{
+  background-color: black;
 }
 </style>
 

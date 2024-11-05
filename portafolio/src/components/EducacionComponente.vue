@@ -26,12 +26,12 @@ const arreglo= ref([
 ul{
     border-left: 3px solid;
     margin-left: 2rem;
-    color: rgb(3, 7, 7);
+    color: white;
 }
 li{
     list-style: decimal;
     padding-left: 1rem;
-    color: rgb(7, 7, 7);
+    color: white;
 }
 .fecha{
     background-color: rgb(3, 2, 5);
@@ -41,11 +41,11 @@ li{
 .titulo{
     display: flex;
     justify-content: center;
-    color:rgb(8, 8, 8)
+    color:white;;
 }
 .descripcion{
     padding: 1 rem;
-    color:black
+    color:white;
 }
 .enlace{
     display: flex;
