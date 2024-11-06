@@ -55,19 +55,22 @@ const redesSociales = [
 </template>
 <style scoped>
 .datos-personales {
-  margin: 1.5rem 0;
+  width: 100%;
+  border: 1px solid var(--vt-c-indigo);
+  background-color: var(--vt-c-indigo);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1.2rem;
+  text-align: center;
 }
 
 .card {
-  padding: 1rem;
-  border-radius: 1.2rem;
-  background-color: var(--vt-c-indigo);
+  width: 100%;
   color: var(--vt-c-white-mute);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -95,8 +98,10 @@ h4 {
 .contacto-lista {
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
   list-style: none;
   gap: 1rem;
+  padding-left: 0;
 }
 
 .icon-redSocial {
