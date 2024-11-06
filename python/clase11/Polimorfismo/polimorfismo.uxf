@@ -1,0 +1,12 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>170</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
++nombre
++sueldo
+--
+_str_()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>470</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Gerente&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
++departamento
+--
+_str_()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>280</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element></diagram>
