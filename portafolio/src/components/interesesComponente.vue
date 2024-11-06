@@ -9,7 +9,7 @@ const intereses = [{
 },
 {
     titulo: "Diseño",
-    descripcion: "nos apasiona la idea de un entorno innovador que sea agradable al usaurio en varios dispositivos para que tenga una experiencia agradable al utilizar las aplicaciones que desarrollamos."
+    descripcion: "nos apasiona la idea de un entorno innovador que sea agradable al usuario en varios dispositivos para que tenga una experiencia agradable al utilizar las aplicaciones que desarrollamos."
 }];
 </script>
 
