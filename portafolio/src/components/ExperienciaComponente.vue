@@ -18,30 +18,46 @@ const experiencias = ref([
 
 <template>
     <div class="card">
-        <h3 class="titulo">{{ titulo.toLocaleUpperCase() }}</h3>
-        <p class="fecha">{{ fecha }}</p>
-        <ul class="listado">
+        <div class="card-container">
+            <h3 class="titulo">{{ titulo.toLocaleUpperCase() }}</h3>
+            <p class="fecha">{{ fecha }}</p>
+            <ul class="listado">
             <li class="item" v-for="experencia in experiencias" :key="experencia.id">
                 <img class="imagen-svg" :src="experencia.src" width="45rem" :alt="experencia.parrafo">
                 <p>{{ experencia.parrafo }}</p>
             </li>
         </ul>
+        </div>
+        
     </div>
 </template>
 
 <style scoped>
 .card{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    flex-wrap: wrap;
     background-color: var(--vt-c-indigo);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
+
+.card-container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .titulo{
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .fecha{
     font-size: 1rem;
@@ -53,6 +69,13 @@ const experiencias = ref([
     display: flex;
     flex-direction: column;
     color: white;
+    padding-left: 0;
+    gap: 1rem;
+}
+.listado p{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
 }
 .item{
     align-items: center;
@@ -61,4 +84,21 @@ const experiencias = ref([
     gap: 1.5rem;
 }
 
+@media (max-width: 500px){
+    .card{
+        align-items: center;
+        padding: 0;
+    }
+    .card-container{
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .listado{
+        align-items: center;
+    }
+    .item{
+        flex-direction: column;
+    }
+}
 </style>

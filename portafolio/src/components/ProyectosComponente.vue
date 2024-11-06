@@ -84,13 +84,13 @@ misProyectos.value = ([
     /* Permite que los elementos se ajusten y pasen a la siguiente línea si no caben en una sola fila */
     flex-wrap: wrap;
     /* Establece un espacio de 20px entre los elementos de la galería */
-    gap: 20px;
+    gap: 2rem;
     /* Agrega un padding de 20px alrededor de la galería */
     padding: 2rem;
     /* Centra los elementos hijos horizontalmente */
     justify-content: center;
     /* Aplica un fondo con un degradado de colores */
-    background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6);
+    background-color: var(--vt-c-indigo);
     /* Ajusta el tamaño del fondo para que cubra el área completa */
     background-size: 400% 400%;
     /* Aplica una animación al fondo que dura 15 segundos, tiene una transición suave y se repite infinitamente */
@@ -134,6 +134,7 @@ misProyectos.value = ([
     max-width: 222px;
     /* Hace que el contenedor se ajuste flexiblemente ocupando al menos 300px de ancho */
     flex: 1 1 300px;
+    justify-content: space-between;
     padding: 1rem;
 }
 
@@ -150,9 +151,12 @@ misProyectos.value = ([
 /* La clase 'proyecto-info' contiene la información del proyecto */
 .proyecto-info {
     /* Agrega un padding de 15px alrededor de la información */
-    padding: 15px;
+    padding: 10px;
     /* Centra el texto dentro del contenedor */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Estilo para los títulos de los proyectos */

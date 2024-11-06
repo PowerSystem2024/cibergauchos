@@ -11,20 +11,31 @@ const arreglo = ref([
 </script>
 
 <template>
-    <ul>
-        <li v-for="item in arreglo" :key="item.id">
-            <div class="fecha"> {{ item.fecha }}</div>
-            <div class="titulo">{{ item.titulo }}</div>
-            <div class="descripcion">{{ item.descripcion }}</div>
-            <a class="enlace">{{ item.enlace }}</a>
-        </li>
-    </ul>
+    <div class="education-container">
+        <ul>
+            <li v-for="item in arreglo" :key="item.id">
+                <div class="fecha"> {{ item.fecha }}</div>
+                <div class="titulo">{{ item.titulo }}</div>
+                <div class="descripcion">{{ item.descripcion }}</div>
+                <a class="enlace">{{ item.enlace }}</a>
+            </li>
+        </ul>
+    </div>
+    
 </template>
 
 <style scoped>
-ul {
+.education-container {
+    margin-top: 2rem;
+    background-color: var(--vt-c-gray-100);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.education-container ul {
     border-left: 3px solid;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     color: var(--vt-c-indigo);
 }
 
@@ -46,7 +57,6 @@ li {
     display: flex;
     justify-content: center;
     color: white;
-    ;
 }
 
 .descripcion {
@@ -56,8 +66,13 @@ li {
 }
 
 .enlace {
-    display: flex;
-    justify-content: center;
     color: rgb(16, 57, 172);
+}
+
+@media (max-width: 530px) {
+    .education-container ul{
+        padding: 0;
+        gap: 2rem;
+    }
 }
 </style>

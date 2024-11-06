@@ -25,19 +25,21 @@ const navegacion = ref([
 .navbar {
   background-color: var(--vt-c-indigo);
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .navbar-menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  padding-left: 0;
 }
 .nav-item {
   font-size: 1.05rem;
@@ -52,11 +54,10 @@ a {
 a:hover {
   color: white;
 }
-@media (max-width: 768px) {
-  .navbar-menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+
+@media (max-width: 550px) {
+  .nav-list {
+    flex-direction: column;
   }
 }
 </style>

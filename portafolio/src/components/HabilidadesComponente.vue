@@ -84,4 +84,10 @@ const languajes = ref([
     font-size: 1.2rem;
 }
 
+@media(max-width: 550px){
+    .card{
+        width: 160px;
+    }
+}
+
 </style>

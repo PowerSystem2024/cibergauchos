@@ -36,6 +36,8 @@ const intereses = [{
 .list_intereses {
     max-width: 1000px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
     gap: 0.7rem;
     padding: 1.5rem;
     text-align: left;
