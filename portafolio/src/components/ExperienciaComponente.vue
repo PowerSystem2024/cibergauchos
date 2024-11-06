@@ -1,13 +1,18 @@
 <script setup>
+import icono1 from '/src/assets/node-js.svg';
+import icono2 from '/src/assets/collaboration.svg';
+import icono3 from '/src/assets/github-svgrepo-com.svg';
+import icono4 from '/src/assets/postgresql.svg';
+import icono5 from '/src/assets/programming.svg';
 import {ref} from 'vue';
 const titulo='Desarrolladores Full Stack';
 const fecha='Desde Marzo 2022 / Octubre 2023';
 const experiencias = ref([
-    {id:1, src:'/src/assets/node-js.svg', parrafo: 'Desarrollo y mantenimiento de sitios web corporativos utilizando React y Node.'},
-    {id:2, src:'/src/assets/collaboration.svg', parrafo: 'Colaboraciones con el equipo de diseño para implementar interfaces accesibles.'},
-    {id:3, src:'/src/assets/github-svgrepo-com.svg', parrafo: 'Realizacion de pruebas de codigo y mantenimiento del repositorio Git.'},
-    {id:4, src:'/src/assets/postgresql.svg', parrafo: 'Implementaciones de base de datos PostgreSQL y consultas SQL para optimizacion de datos.'},
-    {id:5, src:'/src/assets/programming.svg', parrafo: 'Implementacion de componentes de React para aplicaciones web interactivas.'},
+    {id:1, src:icono1, parrafo: 'Desarrollo y mantenimiento de sitios web corporativos utilizando React y Node.'},
+    {id:2, src:icono2, parrafo: 'Colaboraciones con el equipo de diseño para implementar interfaces accesibles.'},
+    {id:3, src:icono3, parrafo: 'Realizacion de pruebas de codigo y mantenimiento del repositorio Git.'},
+    {id:4, src:icono4, parrafo: 'Implementaciones de base de datos PostgreSQL y consultas SQL para optimizacion de datos.'},
+    {id:5, src:icono5, parrafo: 'Implementacion de componentes de React para aplicaciones web interactivas.'},
 ]);
 </script>
 

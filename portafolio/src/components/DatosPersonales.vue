@@ -1,4 +1,8 @@
 <script setup>
+import linkedin from '/src/assets/linkedin-icon.svg';
+import instagram from '/src/assets/instagram-icon.svg';
+import github from '/src/assets/github-icon.svg';
+import portafolio from '/src/assets/file-icon.svg';
 const nombre = 'Grupo Cibergauchos'
 const ocupacion = 'Técnicos Universitarios en Programación - UTN'
 const residencia = 'Mendoza, Argentina'
@@ -9,25 +13,25 @@ const redesSociales = [
   {
     id: 1,
     name: 'instagram',
-    src: '/src/assets/instagram-icon.svg',
+    src: instagram,
     url: 'https://www.instagram.com/'
   },
   {
     id: 2,
     name: 'linkedin',
-    src: '/src/assets/linkedin-icon.svg',
+    src: linkedin,
     url: 'https://www.linkedin.com/'
   },
   {
     id: 3,
     name: 'github',
-    src: '/src/assets/github-icon.svg',
+    src: github,
     url: 'https://github.com/PowerSystem2024/cibergauchos'
   },
   {
     id: 4,
     name: 'portafolio',
-    src: '/src/assets/file-icon.svg',
+    src: portafolio,
     url: 'https://github.com/PowerSystem2024/cibergauchos'
   }
 ]
