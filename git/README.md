@@ -464,3 +464,17 @@ Capitulo 8: Creacion de Componente Habilidades.
 ## PORTAFOLIO
 
 <sub>Capitulo 9: Creacion de componente Intereses y Footer.</sub>
+
+# CLASE 11 MIÉRCOLES 23 DE OCTUBRE DEL 2024 - Portafolio 11
+
+<sub>Flujo de trabajo profesional -> Archivos binarios</sub>
+
+> Las imagenes cargandolas en el repositorio, representan un problema: porque las imagenes son pesadas, y si la subimos al repositorio, siempre que hagamos cambios, vamos a estar trayendo la imagen siempre, estas imagenes son binarios para GitHub, mientras mas binarios carguemos, más pesado va a ser el repositorio, algo que no es parte de las buenas practicas.
+
+
+> Otra cosa muy importante a tener en cuenta, es que en cada commit que hagamos hay un tamaño predefinido para la carga, este no lo podemos superar o no podremos subir los commits, el tamaño es 100 mb, si acoplamos un archivo binario en un commit que pese mas de esto, será un problema, no nos dejará seguir commiteando, porque siempre seguirá arrastrando el archivo binario.
+
+## Portafolio
+
+<sub>Capítulo 10: Build del Portafolio Vuejs y manejo de activos estáticos</sub>
+<sub>Despliegue de portafolio en Netlify - Github</sub>
