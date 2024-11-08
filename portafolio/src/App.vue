@@ -61,6 +61,10 @@ main h2 {
   margin-bottom: 1rem;
 }
 
+section{
+  padding: 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;

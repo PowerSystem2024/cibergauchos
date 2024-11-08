@@ -9,7 +9,7 @@ const intereses = [{
 },
 {
     titulo: "Diseño",
-    descripcion: "nos apasiona la idea de un entorno innovador que sea agradable al usaurio en varios dispositivos para que tenga una experiencia agradable al utilizar las aplicaciones que desarrollamos."
+    descripcion: "nos apasiona la idea de un entorno innovador que sea agradable al usuario en varios dispositivos para que tenga una experiencia agradable al utilizar las aplicaciones que desarrollamos."
 }];
 </script>
 
@@ -36,6 +36,8 @@ const intereses = [{
 .list_intereses {
     max-width: 1000px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
     gap: 0.7rem;
     padding: 1.5rem;
     text-align: left;
